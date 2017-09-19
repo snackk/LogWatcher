@@ -19,9 +19,9 @@ $ cd ~
 $ mkdir git && cd git
 $ git clone https://github.com/snackk/logwatcher
 $ cd logwatcher
-$ cp LogsWatcher.sh /etc/init.d/
+$ sudo cp LogsWatcher.sh /etc/init.d/
 $ sudo chmod 755 /etc/init.d/LogsWatcher.sh
-$ sudo update-rc.d LogsWatcher defaults
+$ sudo update-rc.d LogsWatcher.sh defaults
 ```
 If everything works as expected, you should receive an email everytime someone's log on to your machine, including yourself.
   
