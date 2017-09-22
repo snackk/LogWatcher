@@ -5,10 +5,10 @@ from GmailReporter import GmailReporter
 
 def main(argv):
     message = "A new ssh session was created, check the log bellow.\n" + argv[1]
-    email = os.environ["log_email_from"]
-    emailTo = os.environ["log_email_to"]
+    email = "owncloud.watcher@gmail.com"#os.environ["log_email_from"]
+    emailTo = "snackk026@gmail.com"#os.environ["log_email_to"]
     subject = "Owncloud - New SSH session created"
-    passwd = os.environ["log_passwd"]
+    passwd = "emc2changedall"#os.environ["log_passwd"]
     
     if message:
     	report = GmailReporter(email, emailTo, subject, passwd, message)
